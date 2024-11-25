@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennington County Conservation District</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: left;
+            background-color: #ffffff;
+            color: white;
+            padding: 30px 50px;
+        }
+
+        .logo img {
+            max-width: 150px;
+        }
+
+        nav {
+            background-color: #09522f;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 3px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(3, 3, 3);
+            border-radius: 5px;
+        }
+
+        nav ul li .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+            min-width: 200px;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: flex;
+            background-color: rgb(33, 33, 33    );
+            border-radius: 5px;
+        }
+
+        nav ul li .dropdown-menu li {
+            position: relative;
+            width: 100%;
+        }
+
+        nav ul li .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li .dropdown-menu a:hover {
+            background-color: rgb(33, 33, 33);
+            border-radius: 5px;
+        }
+
+        nav ul li .dropdown-menu .nested-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: rgb(33, 33, 33);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+            min-width: 200px;
+            flex-direction: column;
+        }
+
+        nav ul li .dropdown-menu li:hover .nested-dropdown-menu {
+            display: flex;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="BCCD Logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Grants ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">State Grants</a></li>
+                    <li><a href="#">Work Grants</a></li>
+                    <li><a href="#">Local Funding and Support</a></li>
+                    <li><a href="#">Funding Updates</a></li>
+                    <li><a href="#">Funding Accomplishments</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Get Involved ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li>
+                        <a href="#">Events ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Community Resilience Symposiums</a></li>
+                            <li><a href="#">Annual Community Resilience Forum</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Education ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Environmental Notice Bulletin</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Resources ▼</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Water ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Disaster Mitigation</a></li>
+                            <li><a href="#">Water Quality</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Agriculture ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Hickory Harvest</a></li>
+                            <li><a href="#">Chestnut Giveaway</a></li>
+                            <li><a href="#">Guides</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Land</a></li>
+                    <li>
+                        <a href="#">Conservation ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Wetlands</a></li>
+                            <li><a href="#">Wildlife</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Technology ▼</a>
+                        <ul class="nested-dropdown-menu">
+                            <li><a href="#">Vermont Ripsower</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">News & Events ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Mailing List</a></li>
+                    <li><a href="#">Events Calendar</a></li>
+                    <li><a href="#">Environmental Notice Bulletin</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Organization Members</a></li>
+                    <li><a href="#">Board Meetings</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Emergency Response ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Flood Reporting</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Bennington County Conservation District</h1>
+            <p>Our mission is to foster a resilient and sustainable future for the people of Bennington County by uniting community collaboration, conservation mindfulness, and technological innovation. We are dedicated to preserving the natural landscapes, supporting rural landowners, and empowering the county’s residents to take part in shaping a vibrant and environmentally forward community.</p>
+        </section>
+    </main>
+</body>
+</html>
